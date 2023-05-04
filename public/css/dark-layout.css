@@ -1,0 +1,12 @@
+.dark-layout .dropdown-menu {
+  background-color: #283046;
+  color: #f1f1f1;
+}
+.dark-layout .dropdown-menu .dropdown-item {
+  color: #e6e6e6;
+  transition: all 0.3s ease;
+}
+.dark-layout .dropdown-menu .dropdown-item:hover {
+  background-color: #384361;
+  color: #fff;
+}

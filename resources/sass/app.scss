@@ -1,0 +1,164 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Font-Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+// Toastification
+@import "~vue-toastification/dist/index.css";
+
+html {
+    font-family: 'Scope One', serif;
+}
+body {
+    overflow-x: hidden;
+}
+// Background COlors
+.bg-dark {
+    background-color: #161D31 !important;
+    color: #f1f1f1;
+}
+.bg-primary {
+    background-color: #655AF3 !important;
+    color: #f1f1f1;
+}
+.bg-dark-0,
+.modal-content,
+.card {
+    background-color: #283046;
+    color: #f1f1f1 !important;
+}
+.bg-dark-1 {
+    background-color: #384361;
+    color: #f1f1f1;
+}
+
+// Links and Buttons
+.btn-white-link {
+    color: #a6a6a6;
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+    }
+}
+.btn-white-link-glow {
+    color: #a6a6a6;
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+        box-shadow: 0 2px 8px 3px #e6e6e6;
+    }
+}
+
+.btn-primary {
+    background-color: #7971f4 !important;
+    color: #f1f1f1;
+    border: none;
+
+    &:hover {
+        background-color: #655AF3 !important;
+        box-shadow: 0 2px 8px 3px #655AF3;
+    }
+}
+
+.btn-outline-danger {
+    &:hover {
+        box-shadow: 0 2px 8px 3px #d40000;
+    }
+}
+
+// Texts
+.muted {
+    color: #c5c5c5;
+    font-style: italic;
+}
+
+// Cursor
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// Banners
+.banner {
+    width: 100vw;
+    height: 70vh;
+    overflow-y: hidden;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.banner-text {
+    font-size: 36px;
+    font-family: 'Lora', serif;
+}
+
+// Align
+.centerize {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// Glassmorph
+.glassmorph,
+.modal-backdrop {
+    background: rgba( 176, 199, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.bluish-glow,
+.bluish-glow-hover {
+    background: rgba( 68, 84, 134, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+}
+
+.bluish-glow-hover:hover {
+    background: #283046;
+}
+
+// Modal
+.modal {
+    .close {
+        background-color: #d40000;
+        color: #f6f6f6;
+        border-color: #d40000;
+        border-radius: 4px;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            background-color: #ff0000;
+            box-shadow: 0 2px 8px 2px #ff0000;
+        }
+    }
+}
+
+// Footer
+.footer-bg {
+    background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEXffgDb2x8nYMV6KqpWFg3IdACMHrkfO2LISshg83zs5qsvFbCB8doWi7x62s4-f0gWM7Al3S2SyFT1-lXFtKEiZ190SLnm2GZc1i5prd89DPNPNMKHfPfl2vWM-df4bgujaKmtFWQT3fPLoZumUBpi=w803-h793-no?authuser=0');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
