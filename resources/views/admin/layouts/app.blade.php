@@ -24,7 +24,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark-0 shadow-sm sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="home">
+                <a class="navbar-brand" href="/admin/home">
                     {{ config('app.name', 'Dashboard') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

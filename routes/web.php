@@ -16,24 +16,22 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-
-
-
-Route::prefix('admin')->name('admin.')->group(function() {
-    Route::middleware(['guest:admin'])->group(function() {
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::middleware(['guest:admin'])->group(function () {
         Route::get('/login', [AdminController::class, 'showLoginForm']);
         Route::post('/login', [AdminController::class, 'login'])->name('login');
     });
 
-    Route::middleware(['auth:admin'])->group(function() {
+    Route::middleware(['auth:admin'])->group(function () {
         Route::get('/home', [AdminController::class, 'index'])->name('home');
     });
 });
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/welcome', function () {
+    if (Auth::user()) return redirect('/');
+    else return view('welcome');
 });

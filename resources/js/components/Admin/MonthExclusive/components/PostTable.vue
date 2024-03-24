@@ -156,7 +156,6 @@ export default {
         { label: 'Image Preview', field: 'image' },
         { label: 'Title', field: 'title' },
         { label: 'Category', field: 'category' },
-        { label: 'Link', field: 'link', 'min-width': '40px' },
       ],
       collapse: {},
       processing: {},
@@ -208,11 +207,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .img-preview {
-  width: 200px;
-  max-height: 200px;
+  width: auto;
+  height: 200px;
   border: 1px solid;
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
 }
 .delete-btn {
   font-size: 16px;

@@ -39,7 +39,6 @@
               >
                 <b-card
                   :bg-variant="selectedItem.id == item.id ? 'dark-1 selected' : ''"
-                  :img-src="item.image"
                   :title="item.title"
                   class="jumbo-card m-4"
                   img-left

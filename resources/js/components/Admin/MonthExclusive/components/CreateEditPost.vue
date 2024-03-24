@@ -46,13 +46,14 @@
             />
 
             <datalist id="category-list">
-              <option value="Month-First Exclusive" />
+              <option value="Month-Start Exclusive" />
               <option value="Month-Second Exclusive" />
               <option value="Month-Third Exclusive" />
               <option value="Month-Fourth Exclusive" />
               <option value="Month-Start Livestream" />
               <option value="Mid-Month Livestream" />
               <option value="Month-Last Livestream" />
+              <option value="Month-Bonus Exclusive" />
             </datalist>
             <small class="text-danger">{{ errors[0] }}</small>
           </b-form-group>
